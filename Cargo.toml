@@ -1,5 +1,5 @@
 [package]
-name = "madanasampleclientrust"
+name = "madana_apiclien"
 version = "1.0.0"
 authors = ["OpenAPI Generator team and contributors"]
 
