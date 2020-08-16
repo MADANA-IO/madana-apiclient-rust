@@ -9,10 +9,11 @@ Method | HTTP request | Description
 [**create_new_request**](RequestServiceApi.md#create_new_request) | **Post** /requests | Endpoint used to create a new Analysis Request.
 [**get_actions**](RequestServiceApi.md#get_actions) | **Get** /requests/actions | 
 [**get_agent**](RequestServiceApi.md#get_agent) | **Get** /requests/{uuid}/agent | Is called from the APE to request all parked datasets.
-[**get_all_requests**](RequestServiceApi.md#get_all_requests) | **Get** /requests | Returns UUIDs of existing analyses.
+[**get_all_requests2**](RequestServiceApi.md#get_all_requests2) | **Get** /requests | Returns UUIDs of existing analyses.
 [**get_data**](RequestServiceApi.md#get_data) | **Get** /requests/{uuid}/data | Is called from the APE to request all parked datasets.
 [**get_request**](RequestServiceApi.md#get_request) | **Get** /requests/{uuid} | Returns the details for certain Request.
 [**get_result**](RequestServiceApi.md#get_result) | **Get** /requests/{uuid}/result | Can be called from creator to request the AnalysisResult.
+[**get_status**](RequestServiceApi.md#get_status) | **Get** /requests/stats | 
 [**give_consent**](RequestServiceApi.md#give_consent) | **Post** /requests/{uuid}/consent | Used to give consent for request.
 [**init_request_parameters**](RequestServiceApi.md#init_request_parameters) | **Post** /requests/{uuid} | Endpoint used initialized addition datacollection parameters for requester.
 [**set_agent**](RequestServiceApi.md#set_agent) | **Post** /requests/{uuid}/agent | Is called from the APE to request all parked datasets.
@@ -22,7 +23,7 @@ Method | HTTP request | Description
 
 ## add_data
 
-> crate::models::JsonAnalysis add_data(uuid, authorization, body)
+> std::path::PathBuf add_data(uuid, authorization, body)
 Is used to upload and park the data till the AnalysisRequest gets processed.
 
 Is used to upload and park the data till the AnalysisRequest gets processed
@@ -38,7 +39,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::JsonAnalysis**](json_Analysis.md)
+[**std::path::PathBuf**](std::path::PathBuf.md)
 
 ### Authorization
 
@@ -54,7 +55,7 @@ No authorization required
 
 ## cancel_processing
 
-> crate::models::JsonAnalysis cancel_processing(uuid, authorization, body)
+> std::path::PathBuf cancel_processing(uuid, authorization, body)
 Endpoint is called from the Analysis Processing entity to submit the result.
 
 Endpoint is called from the Analysis Processing entity to submit the result
@@ -70,7 +71,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::JsonAnalysis**](json_Analysis.md)
+[**std::path::PathBuf**](std::path::PathBuf.md)
 
 ### Authorization
 
@@ -175,9 +176,9 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## get_all_requests
+## get_all_requests2
 
-> std::path::PathBuf get_all_requests(authorization, created, history, limit, new, offset, preview, ready)
+> std::path::PathBuf get_all_requests2(authorization, created, history, limit, new, offset, preview, ready)
 Returns UUIDs of existing analyses.
 
 Returns UUIDs of existing analyses.
@@ -245,7 +246,7 @@ No authorization required
 
 ## get_request
 
-> crate::models::JsonAnalysis get_request(uuid, authorization)
+> std::path::PathBuf get_request(uuid, authorization)
 Returns the details for certain Request.
 
 Returns the details for certain Request. When requesting an analysis a view of the analysis is stored in the database
@@ -260,7 +261,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::JsonAnalysis**](json_Analysis.md)
+[**std::path::PathBuf**](std::path::PathBuf.md)
 
 ### Authorization
 
@@ -276,7 +277,7 @@ No authorization required
 
 ## get_result
 
-> crate::models::JsonAnalysisResult get_result(uuid, authorization)
+> std::path::PathBuf get_result(uuid, authorization)
 Can be called from creator to request the AnalysisResult.
 
 Can be called from creator to request the AnalysisResult.
@@ -291,7 +292,32 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::JsonAnalysisResult**](json_AnalysisResult.md)
+[**std::path::PathBuf**](std::path::PathBuf.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## get_status
+
+> std::path::PathBuf get_status()
+
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+[**std::path::PathBuf**](std::path::PathBuf.md)
 
 ### Authorization
 
@@ -307,7 +333,7 @@ No authorization required
 
 ## give_consent
 
-> crate::models::JsonAnalysis give_consent(uuid, authorization)
+> std::path::PathBuf give_consent(uuid, authorization)
 Used to give consent for request.
 
 Used to give consent for request. If the Endpoint is called from the creator of the Analysis, the status of the request is set to completed. If called by another is interpreted as giving consent to participate.
@@ -322,7 +348,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::JsonAnalysis**](json_Analysis.md)
+[**std::path::PathBuf**](std::path::PathBuf.md)
 
 ### Authorization
 
@@ -401,7 +427,7 @@ No authorization required
 
 ## set_result
 
-> crate::models::JsonAnalysis set_result(uuid, authorization, body)
+> std::path::PathBuf set_result(uuid, authorization, body)
 Endpoint is called from the Analysis Processing entity to submit the result.
 
 Endpoint is called from the Analysis Processing entity to submit the result
@@ -417,7 +443,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::JsonAnalysis**](json_Analysis.md)
+[**std::path::PathBuf**](std::path::PathBuf.md)
 
 ### Authorization
 

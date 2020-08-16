@@ -8,6 +8,8 @@ pub struct APIClient {
     authentication_service_api: Box<dyn crate::apis::AuthenticationServiceApi>,
     certificate_service_api: Box<dyn crate::apis::CertificateServiceApi>,
     data_collection_service_api: Box<dyn crate::apis::DataCollectionServiceApi>,
+    enclave_service_api: Box<dyn crate::apis::EnclaveServiceApi>,
+    environment_service_api: Box<dyn crate::apis::EnvironmentServiceApi>,
     node_service_api: Box<dyn crate::apis::NodeServiceApi>,
     organization_service_api: Box<dyn crate::apis::OrganizationServiceApi>,
     request_service_api: Box<dyn crate::apis::RequestServiceApi>,
@@ -26,6 +28,8 @@ impl APIClient {
             authentication_service_api: Box::new(crate::apis::AuthenticationServiceApiClient::new(rc.clone())),
             certificate_service_api: Box::new(crate::apis::CertificateServiceApiClient::new(rc.clone())),
             data_collection_service_api: Box::new(crate::apis::DataCollectionServiceApiClient::new(rc.clone())),
+            enclave_service_api: Box::new(crate::apis::EnclaveServiceApiClient::new(rc.clone())),
+            environment_service_api: Box::new(crate::apis::EnvironmentServiceApiClient::new(rc.clone())),
             node_service_api: Box::new(crate::apis::NodeServiceApiClient::new(rc.clone())),
             organization_service_api: Box::new(crate::apis::OrganizationServiceApiClient::new(rc.clone())),
             request_service_api: Box::new(crate::apis::RequestServiceApiClient::new(rc.clone())),
@@ -50,6 +54,14 @@ impl APIClient {
 
     pub fn data_collection_service_api(&self) -> &dyn crate::apis::DataCollectionServiceApi{
         self.data_collection_service_api.as_ref()
+    }
+
+    pub fn enclave_service_api(&self) -> &dyn crate::apis::EnclaveServiceApi{
+        self.enclave_service_api.as_ref()
+    }
+
+    pub fn environment_service_api(&self) -> &dyn crate::apis::EnvironmentServiceApi{
+        self.environment_service_api.as_ref()
     }
 
     pub fn node_service_api(&self) -> &dyn crate::apis::NodeServiceApi{
