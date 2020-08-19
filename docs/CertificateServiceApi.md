@@ -5,8 +5,8 @@ All URIs are relative to *http://api.madana.io/rest*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**authenticate_certificate**](CertificateServiceApi.md#authenticate_certificate) | **Post** /certificates | Issues certificates for logged-in users.
-[**get_certificate**](CertificateServiceApi.md#get_certificate) | **Get** /certificates/root | 
-[**get_certificate_0**](CertificateServiceApi.md#get_certificate_0) | **Get** /certificates/{fingerprint} | 
+[**get_certificate_by_fingerprint**](CertificateServiceApi.md#get_certificate_by_fingerprint) | **Get** /certificates/{fingerprint} | 
+[**get_root_certificate**](CertificateServiceApi.md#get_root_certificate) | **Get** /certificates/root | 
 
 
 
@@ -40,14 +40,17 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## get_certificate
+## get_certificate_by_fingerprint
 
-> std::path::PathBuf get_certificate()
+> std::path::PathBuf get_certificate_by_fingerprint(fingerprint)
 
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**fingerprint** | **String** |  | [required] |
 
 ### Return type
 
@@ -65,17 +68,14 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## get_certificate_0
+## get_root_certificate
 
-> std::path::PathBuf get_certificate_0(fingerprint)
+> std::path::PathBuf get_root_certificate()
 
 
 ### Parameters
 
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**fingerprint** | **String** |  | [required] |
+This endpoint does not need any parameter.
 
 ### Return type
 

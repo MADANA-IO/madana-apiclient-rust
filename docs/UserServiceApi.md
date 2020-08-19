@@ -4,7 +4,7 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_object2**](UserServiceApi.md#create_object2) | **Post** /users | Creates a new user object.
+[**create_object**](UserServiceApi.md#create_object) | **Post** /users | Creates a new user object.
 [**delete_object**](UserServiceApi.md#delete_object) | **Delete** /users/{username} | Deletes an User based on the provided id and securitycontext.
 [**delete_object_0**](UserServiceApi.md#delete_object_0) | **Delete** /users/{username}/social/{platform}/{ident} | Deletes linked account from the user and securitycontext.
 [**get_avatars**](UserServiceApi.md#get_avatars) | **Get** /users/{username}/avatars | 
@@ -12,13 +12,13 @@ Method | HTTP request | Description
 [**get_object2**](UserServiceApi.md#get_object2) | **Get** /users/{username} | 
 [**set_avatar**](UserServiceApi.md#set_avatar) | **Post** /users/{username}/avatars | 
 [**set_settings**](UserServiceApi.md#set_settings) | **Post** /users/{username}/settings | 
-[**update_object2**](UserServiceApi.md#update_object2) | **Put** /users/{username} | Updates Userproperties based on the provided user object.
+[**update_object**](UserServiceApi.md#update_object) | **Put** /users/{username} | Updates Userproperties based on the provided user object.
 
 
 
-## create_object2
+## create_object
 
-> std::path::PathBuf create_object2(referrer, body)
+> std::path::PathBuf create_object(referrer, body)
 Creates a new user object.
 
 Creates a new user object
@@ -251,9 +251,9 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## update_object2
+## update_object
 
-> std::path::PathBuf update_object2(username, body)
+> std::path::PathBuf update_object(username, body)
 Updates Userproperties based on the provided user object.
 
 Updates Userproperties based on the provided user object

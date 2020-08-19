@@ -5,9 +5,9 @@ All URIs are relative to *http://api.madana.io/rest*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**activate_user**](AccountServiceApi.md#activate_user) | **Get** /account/activation/{token} | 
-[**create_object**](AccountServiceApi.md#create_object) | **Post** /account/password | Sends an Password reset mail to the given MailAddress.
+[**create_password_reset**](AccountServiceApi.md#create_password_reset) | **Post** /account/password | Sends an Password reset mail to the given MailAddress.
 [**request_verification_mail**](AccountServiceApi.md#request_verification_mail) | **Get** /account/verifymail | Used to request a new  activation-mail for the user.
-[**update_object**](AccountServiceApi.md#update_object) | **Put** /account/password | Receives the Password reset and tries to set the provided password for the user.
+[**update_password**](AccountServiceApi.md#update_password) | **Put** /account/password | Receives the Password reset and tries to set the provided password for the user.
 
 
 
@@ -39,9 +39,9 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## create_object
+## create_password_reset
 
-> std::path::PathBuf create_object(body)
+> std::path::PathBuf create_password_reset(body)
 Sends an Password reset mail to the given MailAddress.
 
 Sends an Password reset mail to the given MailAddress
@@ -96,9 +96,9 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## update_object
+## update_password
 
-> std::path::PathBuf update_object(body)
+> std::path::PathBuf update_password(body)
 Receives the Password reset and tries to set the provided password for the user.
 
 Receives the Password reset and tries to set the provided password for the user. The Password will only be set if a valid token is provided

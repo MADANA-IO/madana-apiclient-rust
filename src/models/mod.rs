@@ -80,6 +80,8 @@ pub mod xml_ns0_environment;
 pub use self::xml_ns0_environment::XmlNs0Environment;
 pub mod xml_ns0_environment_all_of;
 pub use self::xml_ns0_environment_all_of::XmlNs0EnvironmentAllOf;
+pub mod xml_ns0_input_stream;
+pub use self::xml_ns0_input_stream::XmlNs0InputStream;
 pub mod xml_ns0_ipfs_system_info;
 pub use self::xml_ns0_ipfs_system_info::XmlNs0IpfsSystemInfo;
 pub mod xml_ns0_ipfs_system_info_all_of;
