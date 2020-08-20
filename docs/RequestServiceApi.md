@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**create_new_request**](RequestServiceApi.md#create_new_request) | **Post** /requests | Endpoint used to create a new Analysis Request.
 [**get_actions**](RequestServiceApi.md#get_actions) | **Get** /requests/actions | 
 [**get_agent**](RequestServiceApi.md#get_agent) | **Get** /requests/{uuid}/agent | Is called from the APE to request all parked datasets.
-[**get_all_requests2**](RequestServiceApi.md#get_all_requests2) | **Get** /requests | Returns UUIDs of existing analyses.
+[**get_all_requests**](RequestServiceApi.md#get_all_requests) | **Get** /requests | Returns UUIDs of existing analyses.
 [**get_data**](RequestServiceApi.md#get_data) | **Get** /requests/{uuid}/data | Is called from the APE to request all parked datasets.
 [**get_request**](RequestServiceApi.md#get_request) | **Get** /requests/{uuid} | Returns the details for certain Request.
 [**get_result**](RequestServiceApi.md#get_result) | **Get** /requests/{uuid}/result | Can be called from creator to request the AnalysisResult.
@@ -176,9 +176,9 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## get_all_requests2
+## get_all_requests
 
-> std::path::PathBuf get_all_requests2(authorization, created, history, limit, new, offset, preview, ready)
+> std::path::PathBuf get_all_requests(authorization, created, history, limit, new, offset, preview, ready)
 Returns UUIDs of existing analyses.
 
 Returns UUIDs of existing analyses.
