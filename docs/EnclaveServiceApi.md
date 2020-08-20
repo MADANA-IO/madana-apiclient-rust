@@ -4,6 +4,7 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**add_history**](EnclaveServiceApi.md#add_history) | **Post** /enclaves/{uuid}/history | 
 [**approve_enclave**](EnclaveServiceApi.md#approve_enclave) | **Post** /enclaves/{uuid}/approval | 
 [**assign_enclave_agent**](EnclaveServiceApi.md#assign_enclave_agent) | **Post** /enclaves/{uuid}/assign | 
 [**attestate_enclave**](EnclaveServiceApi.md#attestate_enclave) | **Post** /enclaves/{uuid}/attestation | 
@@ -13,6 +14,35 @@ Method | HTTP request | Description
 [**get_enclaves**](EnclaveServiceApi.md#get_enclaves) | **Get** /enclaves | Returns UUIDs of existing analyses.
 [**kill_enclave**](EnclaveServiceApi.md#kill_enclave) | **Post** /enclaves/{uuid}/kill | 
 
+
+
+## add_history
+
+> std::path::PathBuf add_history(uuid, body)
+
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**uuid** | **String** |  | [required] |
+**body** | Option<[**JsonSignedData**](JsonSignedData.md)> |  |  |
+
+### Return type
+
+[**std::path::PathBuf**](std::path::PathBuf.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
 ## approve_enclave

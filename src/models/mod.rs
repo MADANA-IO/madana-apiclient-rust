@@ -56,6 +56,8 @@ pub mod json_run_config;
 pub use self::json_run_config::JsonRunConfig;
 pub mod json_signed_data;
 pub use self::json_signed_data::JsonSignedData;
+pub mod json_signed_data_utils;
+pub use self::json_signed_data_utils::JsonSignedDataUtils;
 pub mod json_wireguard_interface;
 pub use self::json_wireguard_interface::JsonWireguardInterface;
 pub mod json_wireguard_interface_all_of;

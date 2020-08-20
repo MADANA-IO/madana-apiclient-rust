@@ -35,7 +35,7 @@ Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **uuid** | **String** |  | [required] |
 **authorization** | Option<**String**> | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c |  |
-**body** | Option<[**JsonSignedData**](JsonSignedData.md)> |  |  |
+**body** | Option<[**JsonSignedDataUtils**](JsonSignedDataUtils.md)> |  |  |
 
 ### Return type
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **uuid** | **String** |  | [required] |
 **authorization** | Option<**String**> | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c |  |
-**body** | Option<[**JsonSignedData**](JsonSignedData.md)> |  |  |
+**body** | Option<[**JsonSignedDataUtils**](JsonSignedDataUtils.md)> |  |  |
 
 ### Return type
 
@@ -98,7 +98,7 @@ Endpoint used to create a new Analysis Request
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **authorization** | Option<**String**> | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c |  |
-**body** | Option<[**JsonSignedData**](JsonSignedData.md)> |  |  |
+**body** | Option<[**JsonSignedDataUtils**](JsonSignedDataUtils.md)> |  |  |
 
 ### Return type
 
@@ -215,7 +215,7 @@ No authorization required
 
 ## get_data
 
-> crate::models::JsonSignedData get_data(uuid, authorization)
+> crate::models::JsonSignedDataUtils get_data(uuid, authorization)
 Is called from the APE to request all parked datasets.
 
 Is called from the APE to request all parked datasets. Returns the transmitted data for certain Request. When requesting the data, the status of the request is automatically set to processing.
@@ -230,7 +230,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::JsonSignedData**](json_SignedData.md)
+[**crate::models::JsonSignedDataUtils**](json_SignedData_utils.md)
 
 ### Authorization
 
@@ -439,7 +439,7 @@ Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **uuid** | **String** |  | [required] |
 **authorization** | Option<**String**> | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c |  |
-**body** | Option<[**JsonSignedData**](JsonSignedData.md)> |  |  |
+**body** | Option<[**JsonSignedDataUtils**](JsonSignedDataUtils.md)> |  |  |
 
 ### Return type
 
