@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **internal_ident** | Option<**String**> |  | [optional]
 **internal_remote_control_server** | Option<**String**> |  | [optional]
 **process** | Option<[**crate::models::XmlNs0Process**](xml_ns0_process.md)> |  | [optional]
+**public_ident** | Option<**String**> |  | [optional]
 **remote_control_server** | Option<**String**> |  | [optional]
 **signer_ident** | Option<**String**> |  | [optional]
 **startup_cmd** | Option<**String**> |  | [optional]
