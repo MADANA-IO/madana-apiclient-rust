@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**delete_object_0**](UserServiceApi.md#delete_object_0) | **Delete** /users/{username}/social/{platform}/{ident} | Deletes linked account from the user and securitycontext.
 [**get_avatars**](UserServiceApi.md#get_avatars) | **Get** /users/{username}/avatars | 
 [**get_certificates**](UserServiceApi.md#get_certificates) | **Get** /users/{username}/certificates | 
+[**get_enclave_history**](UserServiceApi.md#get_enclave_history) | **Get** /users/{username}/enclavehistory | 
 [**get_object2**](UserServiceApi.md#get_object2) | **Get** /users/{username} | 
 [**set_avatar**](UserServiceApi.md#set_avatar) | **Post** /users/{username}/avatars | 
 [**set_settings**](UserServiceApi.md#set_settings) | **Post** /users/{username}/settings | 
@@ -148,6 +149,36 @@ No authorization required
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **username** | **String** |  | [required] |
+
+### Return type
+
+[**std::path::PathBuf**](std::path::PathBuf.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## get_enclave_history
+
+> std::path::PathBuf get_enclave_history(username, limit, offset)
+
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**username** | **String** |  | [required] |
+**limit** | Option<**String**> |  |  |[default to 30]
+**offset** | Option<**String**> |  |  |[default to 0]
 
 ### Return type
 
