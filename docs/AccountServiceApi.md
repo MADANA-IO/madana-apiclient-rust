@@ -4,10 +4,10 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**activate_user**](AccountServiceApi.md#activate_user) | **Get** /account/activation/{token} | 
-[**create_password_reset**](AccountServiceApi.md#create_password_reset) | **Post** /account/password | Sends an Password reset mail to the given MailAddress.
-[**request_verification_mail**](AccountServiceApi.md#request_verification_mail) | **Get** /account/verifymail | Used to request a new  activation-mail for the user.
-[**update_password**](AccountServiceApi.md#update_password) | **Put** /account/password | Receives the Password reset and tries to set the provided password for the user.
+[**activate_user**](AccountServiceApi.md#activate_user) | **get** /account/activation/{token} | 
+[**create_password_reset**](AccountServiceApi.md#create_password_reset) | **post** /account/password | Sends an Password reset mail to the given MailAddress.
+[**request_verification_mail**](AccountServiceApi.md#request_verification_mail) | **get** /account/verifymail | Used to request a new  activation-mail for the user.
+[**update_password**](AccountServiceApi.md#update_password) | **put** /account/password | Receives the Password reset and tries to set the provided password for the user.
 
 
 

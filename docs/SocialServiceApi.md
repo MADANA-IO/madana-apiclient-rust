@@ -4,12 +4,12 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_my_profile**](SocialServiceApi.md#get_my_profile) | **Get** /social/profiles/me | 
-[**get_platforms2**](SocialServiceApi.md#get_platforms2) | **Get** /social | Returns all Platforms / Systems that can be Connected to the MADANA Service.
-[**get_ranking**](SocialServiceApi.md#get_ranking) | **Get** /social/ranking | Returns the Ranking by PTS within the System.
-[**get_social_platform_feed**](SocialServiceApi.md#get_social_platform_feed) | **Get** /social/feed/{platform} | 
-[**get_user_profile**](SocialServiceApi.md#get_user_profile) | **Get** /social/profiles/{username} | 
-[**get_user_profile_0**](SocialServiceApi.md#get_user_profile_0) | **Get** /social/profiles/{username}/simple | 
+[**get_my_profile**](SocialServiceApi.md#get_my_profile) | **get** /social/profiles/me | 
+[**get_platforms2**](SocialServiceApi.md#get_platforms2) | **get** /social | Returns all Platforms / Systems that can be Connected to the MADANA Service.
+[**get_ranking**](SocialServiceApi.md#get_ranking) | **get** /social/ranking | Returns the Ranking by PTS within the System.
+[**get_social_platform_feed**](SocialServiceApi.md#get_social_platform_feed) | **get** /social/feed/{platform} | 
+[**get_user_profile**](SocialServiceApi.md#get_user_profile) | **get** /social/profiles/{username} | 
+[**get_user_profile_0**](SocialServiceApi.md#get_user_profile_0) | **get** /social/profiles/{username}/simple | 
 
 
 
@@ -67,14 +67,18 @@ No authorization required
 
 ## get_ranking
 
-> std::path::PathBuf get_ranking()
+> std::path::PathBuf get_ranking(limit, offset)
 Returns the Ranking by PTS within the System.
 
 Returns the Ranking by PTS within the System
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**limit** | Option<**String**> |  |  |[default to 99]
+**offset** | Option<**String**> |  |  |[default to 0]
 
 ### Return type
 

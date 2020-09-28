@@ -4,9 +4,9 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_methods_for_type**](DataCollectionServiceApi.md#get_methods_for_type) | **Get** /datacollection/types/{name}/methods | 
-[**get_nodes**](DataCollectionServiceApi.md#get_nodes) | **Get** /datacollection/methods | 
-[**get_types**](DataCollectionServiceApi.md#get_types) | **Get** /datacollection/types | 
+[**get_methods_for_type**](DataCollectionServiceApi.md#get_methods_for_type) | **get** /datacollection/types/{name}/methods | 
+[**get_nodes**](DataCollectionServiceApi.md#get_nodes) | **get** /datacollection/methods | 
+[**get_types**](DataCollectionServiceApi.md#get_types) | **get** /datacollection/types | 
 
 
 

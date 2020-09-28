@@ -4,16 +4,16 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_object**](UserServiceApi.md#create_object) | **Post** /users | Creates a new user object.
-[**delete_object**](UserServiceApi.md#delete_object) | **Delete** /users/{username} | Deletes an User based on the provided id and securitycontext.
-[**delete_object_0**](UserServiceApi.md#delete_object_0) | **Delete** /users/{username}/social/{platform}/{ident} | Deletes linked account from the user and securitycontext.
-[**get_avatars**](UserServiceApi.md#get_avatars) | **Get** /users/{username}/avatars | 
-[**get_certificates**](UserServiceApi.md#get_certificates) | **Get** /users/{username}/certificates | 
-[**get_enclave_history**](UserServiceApi.md#get_enclave_history) | **Get** /users/{username}/enclavehistory | 
-[**get_object2**](UserServiceApi.md#get_object2) | **Get** /users/{username} | 
-[**set_avatar**](UserServiceApi.md#set_avatar) | **Post** /users/{username}/avatars | 
-[**set_settings**](UserServiceApi.md#set_settings) | **Post** /users/{username}/settings | 
-[**update_object**](UserServiceApi.md#update_object) | **Put** /users/{username} | Updates Userproperties based on the provided user object.
+[**create_object**](UserServiceApi.md#create_object) | **post** /users | Creates a new user object.
+[**delete_object**](UserServiceApi.md#delete_object) | **delete** /users/{username} | Deletes an User based on the provided id and securitycontext.
+[**delete_object_0**](UserServiceApi.md#delete_object_0) | **delete** /users/{username}/social/{platform}/{ident} | Deletes linked account from the user and securitycontext.
+[**get_avatars**](UserServiceApi.md#get_avatars) | **get** /users/{username}/avatars | 
+[**get_certificates**](UserServiceApi.md#get_certificates) | **get** /users/{username}/certificates | 
+[**get_enclave_history**](UserServiceApi.md#get_enclave_history) | **get** /users/{username}/enclavehistory | 
+[**get_object2**](UserServiceApi.md#get_object2) | **get** /users/{username} | 
+[**set_avatar**](UserServiceApi.md#set_avatar) | **post** /users/{username}/avatars | 
+[**set_settings**](UserServiceApi.md#set_settings) | **post** /users/{username}/settings | 
+[**update_object**](UserServiceApi.md#update_object) | **put** /users/{username} | Updates Userproperties based on the provided user object.
 
 
 

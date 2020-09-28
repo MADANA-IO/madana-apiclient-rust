@@ -4,15 +4,15 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**delete_environment**](EnvironmentServiceApi.md#delete_environment) | **Delete** /environments/{uuid} | 
-[**delete_environment_subscription**](EnvironmentServiceApi.md#delete_environment_subscription) | **Delete** /environments/{uuid}/subscribe | 
-[**get_environment**](EnvironmentServiceApi.md#get_environment) | **Get** /environments/{uuid} | 
-[**get_environments**](EnvironmentServiceApi.md#get_environments) | **Get** /environments | Returns UUIDs of existing analyses.
-[**get_published_environments**](EnvironmentServiceApi.md#get_published_environments) | **Get** /environments/published | 
-[**get_subscribed_environments**](EnvironmentServiceApi.md#get_subscribed_environments) | **Get** /environments/subscriptions | 
-[**publish_environment**](EnvironmentServiceApi.md#publish_environment) | **Post** /environments | 
-[**subscribe_environment**](EnvironmentServiceApi.md#subscribe_environment) | **Post** /environments/{uuid}/subscribe | 
-[**update_environment**](EnvironmentServiceApi.md#update_environment) | **Put** /environments/{uuid} | 
+[**delete_environment**](EnvironmentServiceApi.md#delete_environment) | **delete** /environments/{uuid} | 
+[**delete_environment_subscription**](EnvironmentServiceApi.md#delete_environment_subscription) | **delete** /environments/{uuid}/subscribe | 
+[**get_environment**](EnvironmentServiceApi.md#get_environment) | **get** /environments/{uuid} | 
+[**get_environments**](EnvironmentServiceApi.md#get_environments) | **get** /environments | Returns UUIDs of existing analyses.
+[**get_published_environments**](EnvironmentServiceApi.md#get_published_environments) | **get** /environments/published | 
+[**get_subscribed_environments**](EnvironmentServiceApi.md#get_subscribed_environments) | **get** /environments/subscriptions | 
+[**publish_environment**](EnvironmentServiceApi.md#publish_environment) | **post** /environments | 
+[**subscribe_environment**](EnvironmentServiceApi.md#subscribe_environment) | **post** /environments/{uuid}/subscribe | 
+[**update_environment**](EnvironmentServiceApi.md#update_environment) | **put** /environments/{uuid} | 
 
 
 

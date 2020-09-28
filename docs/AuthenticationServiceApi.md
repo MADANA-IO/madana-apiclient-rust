@@ -4,17 +4,17 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**authenticate_application**](AuthenticationServiceApi.md#authenticate_application) | **Post** /authentication/application | Authenticates a new application and returns the token.
-[**authenticate_ethereum_wallet**](AuthenticationServiceApi.md#authenticate_ethereum_wallet) | **Post** /authentication/ethereum/{wallet} | 
-[**authenticate_user**](AuthenticationServiceApi.md#authenticate_user) | **Post** /authentication | Authenticates a new user and returns the token (  forbidden if the credentials cannot be validated ).
-[**authenticate_with_ethereum_challenge**](AuthenticationServiceApi.md#authenticate_with_ethereum_challenge) | **Post** /authentication/ethereum/{wallet}/challenge | 
-[**get_fractal_authentication_url**](AuthenticationServiceApi.md#get_fractal_authentication_url) | **Get** /authentication/fractal | Returns the AUthorization URL to verify a Twitter Accounts.
-[**get_nonce_for_ethereum_wallet**](AuthenticationServiceApi.md#get_nonce_for_ethereum_wallet) | **Get** /authentication/ethereum/{wallet} | Returns a nonce for the client which is used as content for the to be created signature.
-[**get_object**](AuthenticationServiceApi.md#get_object) | **Get** /authentication | Used to validate the active connection with the API.
-[**get_twitter_authentication_url**](AuthenticationServiceApi.md#get_twitter_authentication_url) | **Get** /authentication/twitter | Returns the AUthorization URL to verify a Twitter Accounts.
-[**set_facebook_uid**](AuthenticationServiceApi.md#set_facebook_uid) | **Post** /authentication/facebook | Used as Callback URL when users have successfully authorized their facbeook account.
-[**set_fractal_uid**](AuthenticationServiceApi.md#set_fractal_uid) | **Post** /authentication/fractal | 
-[**set_twitter_uid**](AuthenticationServiceApi.md#set_twitter_uid) | **Post** /authentication/twitter | 
+[**authenticate_application**](AuthenticationServiceApi.md#authenticate_application) | **post** /authentication/application | Authenticates a new application and returns the token.
+[**authenticate_ethereum_wallet**](AuthenticationServiceApi.md#authenticate_ethereum_wallet) | **post** /authentication/ethereum/{wallet} | 
+[**authenticate_user**](AuthenticationServiceApi.md#authenticate_user) | **post** /authentication | Authenticates a new user and returns the token (  forbidden if the credentials cannot be validated ).
+[**authenticate_with_ethereum_challenge**](AuthenticationServiceApi.md#authenticate_with_ethereum_challenge) | **post** /authentication/ethereum/{wallet}/challenge | 
+[**get_fractal_authentication_url**](AuthenticationServiceApi.md#get_fractal_authentication_url) | **get** /authentication/fractal | Returns the AUthorization URL to verify a Twitter Accounts.
+[**get_nonce_for_ethereum_wallet**](AuthenticationServiceApi.md#get_nonce_for_ethereum_wallet) | **get** /authentication/ethereum/{wallet} | Returns a nonce for the client which is used as content for the to be created signature.
+[**get_object**](AuthenticationServiceApi.md#get_object) | **get** /authentication | Used to validate the active connection with the API.
+[**get_twitter_authentication_url**](AuthenticationServiceApi.md#get_twitter_authentication_url) | **get** /authentication/twitter | Returns the AUthorization URL to verify a Twitter Accounts.
+[**set_facebook_uid**](AuthenticationServiceApi.md#set_facebook_uid) | **post** /authentication/facebook | Used as Callback URL when users have successfully authorized their facbeook account.
+[**set_fractal_uid**](AuthenticationServiceApi.md#set_fractal_uid) | **post** /authentication/fractal | 
+[**set_twitter_uid**](AuthenticationServiceApi.md#set_twitter_uid) | **post** /authentication/twitter | 
 
 
 

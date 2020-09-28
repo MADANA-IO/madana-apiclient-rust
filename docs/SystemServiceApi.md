@@ -4,8 +4,8 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_all_objects**](SystemServiceApi.md#get_all_objects) | **Get** /system/health | 
-[**get_application**](SystemServiceApi.md#get_application) | **Get** /system/usage | Return the current application usage.
+[**get_all_objects**](SystemServiceApi.md#get_all_objects) | **get** /system/health | 
+[**get_application**](SystemServiceApi.md#get_application) | **get** /system/usage | Return the current application usage.
 
 
 

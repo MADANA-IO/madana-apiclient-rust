@@ -4,15 +4,15 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**add_history**](EnclaveServiceApi.md#add_history) | **Post** /enclaves/{uuid}/history | 
-[**approve_enclave**](EnclaveServiceApi.md#approve_enclave) | **Post** /enclaves/{uuid}/approval | 
-[**assign_enclave_agent**](EnclaveServiceApi.md#assign_enclave_agent) | **Post** /enclaves/{uuid}/assign | 
-[**attestate_enclave**](EnclaveServiceApi.md#attestate_enclave) | **Post** /enclaves/{uuid}/attestation | 
-[**create_enclave_run_request**](EnclaveServiceApi.md#create_enclave_run_request) | **Post** /enclaves | 
-[**get_enclave**](EnclaveServiceApi.md#get_enclave) | **Get** /enclaves/{uuid} | 
-[**get_enclave_types**](EnclaveServiceApi.md#get_enclave_types) | **Get** /enclaves/types | 
-[**get_enclaves**](EnclaveServiceApi.md#get_enclaves) | **Get** /enclaves | Returns UUIDs of existing analyses.
-[**kill_enclave**](EnclaveServiceApi.md#kill_enclave) | **Post** /enclaves/{uuid}/kill | 
+[**add_history**](EnclaveServiceApi.md#add_history) | **post** /enclaves/{uuid}/history | 
+[**approve_enclave**](EnclaveServiceApi.md#approve_enclave) | **post** /enclaves/{uuid}/approval | 
+[**assign_enclave_agent**](EnclaveServiceApi.md#assign_enclave_agent) | **post** /enclaves/{uuid}/assign | 
+[**attestate_enclave**](EnclaveServiceApi.md#attestate_enclave) | **post** /enclaves/{uuid}/attestation | 
+[**create_enclave_run_request**](EnclaveServiceApi.md#create_enclave_run_request) | **post** /enclaves | 
+[**get_enclave**](EnclaveServiceApi.md#get_enclave) | **get** /enclaves/{uuid} | 
+[**get_enclave_types**](EnclaveServiceApi.md#get_enclave_types) | **get** /enclaves/types | 
+[**get_enclaves**](EnclaveServiceApi.md#get_enclaves) | **get** /enclaves | Returns UUIDs of existing analyses.
+[**kill_enclave**](EnclaveServiceApi.md#kill_enclave) | **post** /enclaves/{uuid}/kill | 
 
 
 

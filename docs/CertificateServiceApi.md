@@ -4,9 +4,9 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**authenticate_certificate**](CertificateServiceApi.md#authenticate_certificate) | **Post** /certificates | Issues certificates for logged-in users.
-[**get_certificate_by_fingerprint**](CertificateServiceApi.md#get_certificate_by_fingerprint) | **Get** /certificates/{fingerprint} | 
-[**get_root_certificate**](CertificateServiceApi.md#get_root_certificate) | **Get** /certificates/root | 
+[**authenticate_certificate**](CertificateServiceApi.md#authenticate_certificate) | **post** /certificates | Issues certificates for logged-in users.
+[**get_certificate_by_fingerprint**](CertificateServiceApi.md#get_certificate_by_fingerprint) | **get** /certificates/{fingerprint} | 
+[**get_root_certificate**](CertificateServiceApi.md#get_root_certificate) | **get** /certificates/root | 
 
 
 

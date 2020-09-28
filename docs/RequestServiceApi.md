@@ -4,20 +4,20 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**add_data**](RequestServiceApi.md#add_data) | **Post** /requests/{uuid}/data | Is used to upload and park the data till the AnalysisRequest gets processed.
-[**cancel_processing**](RequestServiceApi.md#cancel_processing) | **Post** /requests/{uuid}/cancel | Endpoint is called from the Analysis Processing entity to submit the result.
-[**create_new_request**](RequestServiceApi.md#create_new_request) | **Post** /requests | Endpoint used to create a new Analysis Request.
-[**get_actions**](RequestServiceApi.md#get_actions) | **Get** /requests/actions | 
-[**get_agent**](RequestServiceApi.md#get_agent) | **Get** /requests/{uuid}/agent | Is called from the APE to request all parked datasets.
-[**get_all_requests**](RequestServiceApi.md#get_all_requests) | **Get** /requests | Returns UUIDs of existing analyses.
-[**get_data**](RequestServiceApi.md#get_data) | **Get** /requests/{uuid}/data | Is called from the APE to request all parked datasets.
-[**get_request**](RequestServiceApi.md#get_request) | **Get** /requests/{uuid} | Returns the details for certain Request.
-[**get_result**](RequestServiceApi.md#get_result) | **Get** /requests/{uuid}/result | Can be called from creator to request the AnalysisResult.
-[**get_status**](RequestServiceApi.md#get_status) | **Get** /requests/stats | 
-[**give_consent**](RequestServiceApi.md#give_consent) | **Post** /requests/{uuid}/consent | Used to give consent for request.
-[**init_request_parameters**](RequestServiceApi.md#init_request_parameters) | **Post** /requests/{uuid} | Endpoint used initialized addition datacollection parameters for requester.
-[**set_agent**](RequestServiceApi.md#set_agent) | **Post** /requests/{uuid}/agent | Is called from the APE to request all parked datasets.
-[**set_result**](RequestServiceApi.md#set_result) | **Post** /requests/{uuid}/result | Endpoint is called from the Analysis Processing entity to submit the result.
+[**add_data**](RequestServiceApi.md#add_data) | **post** /requests/{uuid}/data | Is used to upload and park the data till the AnalysisRequest gets processed.
+[**cancel_processing**](RequestServiceApi.md#cancel_processing) | **post** /requests/{uuid}/cancel | Endpoint is called from the Analysis Processing entity to submit the result.
+[**create_new_request**](RequestServiceApi.md#create_new_request) | **post** /requests | Endpoint used to create a new Analysis Request.
+[**get_actions**](RequestServiceApi.md#get_actions) | **get** /requests/actions | 
+[**get_agent**](RequestServiceApi.md#get_agent) | **get** /requests/{uuid}/agent | Is called from the APE to request all parked datasets.
+[**get_all_requests**](RequestServiceApi.md#get_all_requests) | **get** /requests | Returns UUIDs of existing analyses.
+[**get_data**](RequestServiceApi.md#get_data) | **get** /requests/{uuid}/data | Is called from the APE to request all parked datasets.
+[**get_request**](RequestServiceApi.md#get_request) | **get** /requests/{uuid} | Returns the details for certain Request.
+[**get_result**](RequestServiceApi.md#get_result) | **get** /requests/{uuid}/result | Can be called from creator to request the AnalysisResult.
+[**get_status**](RequestServiceApi.md#get_status) | **get** /requests/stats | 
+[**give_consent**](RequestServiceApi.md#give_consent) | **post** /requests/{uuid}/consent | Used to give consent for request.
+[**init_request_parameters**](RequestServiceApi.md#init_request_parameters) | **post** /requests/{uuid} | Endpoint used initialized addition datacollection parameters for requester.
+[**set_agent**](RequestServiceApi.md#set_agent) | **post** /requests/{uuid}/agent | Is called from the APE to request all parked datasets.
+[**set_result**](RequestServiceApi.md#set_result) | **post** /requests/{uuid}/result | Endpoint is called from the Analysis Processing entity to submit the result.
 
 
 

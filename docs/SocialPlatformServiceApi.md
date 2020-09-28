@@ -4,9 +4,9 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_platforms**](SocialPlatformServiceApi.md#get_platforms) | **Get** /platforms | Used to Handle Incoming Webhooks from Facebook.
-[**listen_twitter_webhook**](SocialPlatformServiceApi.md#listen_twitter_webhook) | **Post** /platforms/twitter | Used to Handle Incoming Webhooks from Facebook.
-[**register_twitter_webhook**](SocialPlatformServiceApi.md#register_twitter_webhook) | **Get** /platforms/twitter | Used to Handle Incoming Webhooks from Twitter.
+[**get_platforms**](SocialPlatformServiceApi.md#get_platforms) | **get** /platforms | Used to Handle Incoming Webhooks from Facebook.
+[**listen_twitter_webhook**](SocialPlatformServiceApi.md#listen_twitter_webhook) | **post** /platforms/twitter | Used to Handle Incoming Webhooks from Facebook.
+[**register_twitter_webhook**](SocialPlatformServiceApi.md#register_twitter_webhook) | **get** /platforms/twitter | Used to Handle Incoming Webhooks from Twitter.
 
 
 

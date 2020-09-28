@@ -4,9 +4,9 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_bootstrap**](NodeServiceApi.md#get_bootstrap) | **Get** /nodes/bootstrap | 
-[**get_nodes2**](NodeServiceApi.md#get_nodes2) | **Get** /nodes | 
-[**post_node_info**](NodeServiceApi.md#post_node_info) | **Post** /nodes | 
+[**get_bootstrap**](NodeServiceApi.md#get_bootstrap) | **get** /nodes/bootstrap | 
+[**get_nodes2**](NodeServiceApi.md#get_nodes2) | **get** /nodes | 
+[**post_node_info**](NodeServiceApi.md#post_node_info) | **post** /nodes | 
 
 
 

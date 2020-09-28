@@ -4,7 +4,7 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_nodes3**](OrganizationServiceApi.md#get_nodes3) | **Get** /organizations | 
+[**get_nodes3**](OrganizationServiceApi.md#get_nodes3) | **get** /organizations | 
 
 
 
