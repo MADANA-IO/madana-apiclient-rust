@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **owner** | Option<**String**> |  | [optional]
 **processors** | Option<**Vec<String>**> |  | [optional]
 **public_key** | Option<**String**> |  | [optional]
+**sgx_info** | Option<[**crate::models::XmlNs0SgxInfo**](xml_ns0_SGXInfo.md)> |  | [optional]
 **status** | Option<**String**> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

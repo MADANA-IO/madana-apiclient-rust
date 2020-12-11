@@ -10,6 +10,7 @@ docs/DataCollectionServiceApi.md
 docs/EnclaveServiceApi.md
 docs/EnvironmentServiceApi.md
 docs/JsonDiskConfig.md
+docs/JsonEnclavePort.md
 docs/JsonEnclaveProcess.md
 docs/JsonEnclaveRunRequest.md
 docs/JsonEnclaveRunningAttestation.md
@@ -37,6 +38,7 @@ docs/JsonNetworkInterface.md
 docs/JsonNodeInfo.md
 docs/JsonProcess.md
 docs/JsonRunConfig.md
+docs/JsonSgxInfo.md
 docs/JsonSignedData.md
 docs/JsonSignedDataUtils.md
 docs/JsonWireguardInterface.md
@@ -50,6 +52,8 @@ docs/SystemServiceApi.md
 docs/UserServiceApi.md
 docs/XmlNs0DiskConfig.md
 docs/XmlNs0DiskConfigAllOf.md
+docs/XmlNs0EnclavePort.md
+docs/XmlNs0EnclavePortAllOf.md
 docs/XmlNs0EnclaveProcess.md
 docs/XmlNs0EnclaveProcessAllOf.md
 docs/XmlNs0EnclaveRunningAttestation.md
@@ -74,6 +78,8 @@ docs/XmlNs0NodeInfoAllOf.md
 docs/XmlNs0Process.md
 docs/XmlNs0RunConfig.md
 docs/XmlNs0RunConfigAllOf.md
+docs/XmlNs0SgxInfo.md
+docs/XmlNs0SgxInfoAllOf.md
 docs/XmlNs0SignedData.md
 docs/XmlNs0SignedDataAllOf.md
 docs/XmlNs0WireguardInterface.md
@@ -96,6 +102,7 @@ src/apis/system_service_api.rs
 src/apis/user_service_api.rs
 src/lib.rs
 src/models/json_disk_config.rs
+src/models/json_enclave_port.rs
 src/models/json_enclave_process.rs
 src/models/json_enclave_run_request.rs
 src/models/json_enclave_running_attestation.rs
@@ -123,6 +130,7 @@ src/models/json_network_interface.rs
 src/models/json_node_info.rs
 src/models/json_process.rs
 src/models/json_run_config.rs
+src/models/json_sgx_info.rs
 src/models/json_signed_data.rs
 src/models/json_signed_data_utils.rs
 src/models/json_wireguard_interface.rs
@@ -130,6 +138,8 @@ src/models/json_wireguard_interface_all_of.rs
 src/models/mod.rs
 src/models/xml_ns0_disk_config.rs
 src/models/xml_ns0_disk_config_all_of.rs
+src/models/xml_ns0_enclave_port.rs
+src/models/xml_ns0_enclave_port_all_of.rs
 src/models/xml_ns0_enclave_process.rs
 src/models/xml_ns0_enclave_process_all_of.rs
 src/models/xml_ns0_enclave_running_attestation.rs
@@ -154,6 +164,8 @@ src/models/xml_ns0_node_info_all_of.rs
 src/models/xml_ns0_process.rs
 src/models/xml_ns0_run_config.rs
 src/models/xml_ns0_run_config_all_of.rs
+src/models/xml_ns0_sgx_info.rs
+src/models/xml_ns0_sgx_info_all_of.rs
 src/models/xml_ns0_signed_data.rs
 src/models/xml_ns0_signed_data_all_of.rs
 src/models/xml_ns0_wireguard_interface.rs
