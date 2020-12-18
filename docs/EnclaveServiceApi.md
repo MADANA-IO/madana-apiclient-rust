@@ -13,7 +13,6 @@ Method | HTTP request | Description
 [**get_enclave_types**](EnclaveServiceApi.md#get_enclave_types) | **get** /enclaves/types | 
 [**get_enclaves**](EnclaveServiceApi.md#get_enclaves) | **get** /enclaves | Returns UUIDs of existing analyses.
 [**kill_enclave**](EnclaveServiceApi.md#kill_enclave) | **post** /enclaves/{uuid}/kill | 
-[**redist_test**](EnclaveServiceApi.md#redist_test) | **get** /enclaves/test/redis | 
 
 
 
@@ -259,31 +258,6 @@ No authorization required
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **uuid** | **String** |  | [required] |
-
-### Return type
-
-[**std::path::PathBuf**](std::path::PathBuf.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## redist_test
-
-> std::path::PathBuf redist_test()
-
-
-### Parameters
-
-This endpoint does not need any parameter.
 
 ### Return type
 
