@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **internal_ident** | Option<**String**> |  | [optional]
 **internal_remote_control_server** | Option<**String**> |  | [optional]
 **internal_wireguard_server** | Option<**String**> |  | [optional]
+**kubernetes_enclave** | Option<[**crate::models::XmlNs0KubernetesEnclave**](xml_ns0_kubernetesEnclave.md)> |  | [optional]
 **port_mapping** | Option<[**serde_json::Value**](.md)> |  | [optional]
 **ports** | Option<[**Vec<crate::models::XmlNs0EnclavePort>**](xml_ns0_enclavePort.md)> |  | [optional]
 **process** | Option<[**crate::models::XmlNs0Process**](xml_ns0_process.md)> |  | [optional]
