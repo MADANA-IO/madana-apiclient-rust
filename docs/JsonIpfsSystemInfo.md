@@ -5,8 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | Option<**String**> |  | [optional]
-**protocol_version** | Option<**String**> |  | [optional]
 **agent_version** | Option<**String**> |  | [optional]
+**protocol_version** | Option<**String**> |  | [optional]
 **swarm_connection** | Option<**String**> |  | [optional]
 **public_key** | Option<**String**> |  | [optional]
 
