@@ -15,42 +15,31 @@ use crate::apis::ResponseContent;
 use super::{Error, configuration};
 
 
-/// struct for typed errors of method `authenticate_certificate`
+/// struct for typed errors of method `add_free_subscription`
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
-pub enum AuthenticateCertificateError {
-    Status403(),
-    Status500(),
+pub enum AddFreeSubscriptionError {
     UnknownValue(serde_json::Value),
 }
 
-/// struct for typed errors of method `get_certificate_by_fingerprint`
+/// struct for typed errors of method `get_application`
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
-pub enum GetCertificateByFingerprintError {
-    UnknownValue(serde_json::Value),
-}
-
-/// struct for typed errors of method `get_root_certificate`
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(untagged)]
-pub enum GetRootCertificateError {
+pub enum GetApplicationError {
     UnknownValue(serde_json::Value),
 }
 
 
-/// Issues certificates for logged-in users
-pub async fn authenticate_certificate(configuration: &configuration::Configuration, body: Option<crate::models::JsonMdnData>) -> Result<crate::models::JsonMdnCertificate, Error<AuthenticateCertificateError>> {
+pub async fn add_free_subscription(configuration: &configuration::Configuration, ) -> Result<std::path::PathBuf, Error<AddFreeSubscriptionError>> {
 
     let local_var_client = &configuration.client;
 
-    let local_var_uri_str = format!("{}/certificates", configuration.base_path);
+    let local_var_uri_str = format!("{}/subscriptions/free", configuration.base_path);
     let mut local_var_req_builder = local_var_client.post(local_var_uri_str.as_str());
 
     if let Some(ref local_var_user_agent) = configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
-    local_var_req_builder = local_var_req_builder.json(&body);
 
     let local_var_req = local_var_req_builder.build()?;
     let local_var_resp = local_var_client.execute(local_var_req).await?;
@@ -61,17 +50,17 @@ pub async fn authenticate_certificate(configuration: &configuration::Configurati
     if local_var_status.is_success() {
         serde_json::from_str(&local_var_content).map_err(Error::from)
     } else {
-        let local_var_entity: Option<AuthenticateCertificateError> = serde_json::from_str(&local_var_content).ok();
+        let local_var_entity: Option<AddFreeSubscriptionError> = serde_json::from_str(&local_var_content).ok();
         let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
         Err(Error::ResponseError(local_var_error))
     }
 }
 
-pub async fn get_certificate_by_fingerprint(configuration: &configuration::Configuration, fingerprint: &str) -> Result<std::path::PathBuf, Error<GetCertificateByFingerprintError>> {
+pub async fn get_application(configuration: &configuration::Configuration, ) -> Result<std::path::PathBuf, Error<GetApplicationError>> {
 
     let local_var_client = &configuration.client;
 
-    let local_var_uri_str = format!("{}/certificates/{fingerprint}", configuration.base_path, fingerprint=crate::apis::urlencode(fingerprint));
+    let local_var_uri_str = format!("{}/subscriptions/active", configuration.base_path);
     let mut local_var_req_builder = local_var_client.get(local_var_uri_str.as_str());
 
     if let Some(ref local_var_user_agent) = configuration.user_agent {
@@ -87,33 +76,7 @@ pub async fn get_certificate_by_fingerprint(configuration: &configuration::Confi
     if local_var_status.is_success() {
         serde_json::from_str(&local_var_content).map_err(Error::from)
     } else {
-        let local_var_entity: Option<GetCertificateByFingerprintError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
-    }
-}
-
-pub async fn get_root_certificate(configuration: &configuration::Configuration, ) -> Result<std::path::PathBuf, Error<GetRootCertificateError>> {
-
-    let local_var_client = &configuration.client;
-
-    let local_var_uri_str = format!("{}/certificates/root", configuration.base_path);
-    let mut local_var_req_builder = local_var_client.get(local_var_uri_str.as_str());
-
-    if let Some(ref local_var_user_agent) = configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
-    }
-
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
-
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
-
-    if local_var_status.is_success() {
-        serde_json::from_str(&local_var_content).map_err(Error::from)
-    } else {
-        let local_var_entity: Option<GetRootCertificateError> = serde_json::from_str(&local_var_content).ok();
+        let local_var_entity: Option<GetApplicationError> = serde_json::from_str(&local_var_content).ok();
         let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
         Err(Error::ResponseError(local_var_error))
     }

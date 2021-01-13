@@ -74,6 +74,7 @@ pub mod organization_service_api;
 pub mod request_service_api;
 pub mod social_platform_service_api;
 pub mod social_service_api;
+pub mod subscription_service_api;
 pub mod system_service_api;
 pub mod user_service_api;
 

@@ -59,6 +59,7 @@ docs/OrganizationServiceApi.md
 docs/RequestServiceApi.md
 docs/SocialPlatformServiceApi.md
 docs/SocialServiceApi.md
+docs/SubscriptionServiceApi.md
 docs/SystemServiceApi.md
 docs/UserServiceApi.md
 docs/XmlNs0DiskConfig.md
@@ -111,6 +112,7 @@ src/apis/organization_service_api.rs
 src/apis/request_service_api.rs
 src/apis/social_platform_service_api.rs
 src/apis/social_service_api.rs
+src/apis/subscription_service_api.rs
 src/apis/system_service_api.rs
 src/apis/user_service_api.rs
 src/lib.rs

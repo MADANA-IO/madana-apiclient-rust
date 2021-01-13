@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**disk** | Option<**String**> |  | [optional]
 **roothash_offset** | Option<**i32**> |  | [optional]
+**disk** | Option<**String**> |  | [optional]
 **readonly** | Option<**bool**> |  | [optional]
 **roothash** | Option<**String**> |  | [optional]
 

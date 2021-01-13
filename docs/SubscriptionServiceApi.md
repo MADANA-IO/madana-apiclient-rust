@@ -1,17 +1,17 @@
-# \SystemServiceApi
+# \SubscriptionServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_all_objects**](SystemServiceApi.md#get_all_objects) | **get** /system/health | 
-[**get_application2**](SystemServiceApi.md#get_application2) | **get** /system/usage | Return the current application usage.
+[**add_free_subscription**](SubscriptionServiceApi.md#add_free_subscription) | **post** /subscriptions/free | 
+[**get_application**](SubscriptionServiceApi.md#get_application) | **get** /subscriptions/active | 
 
 
 
-## get_all_objects
+## add_free_subscription
 
-> std::path::PathBuf get_all_objects()
+> std::path::PathBuf add_free_subscription()
 
 
 ### Parameters
@@ -34,12 +34,10 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## get_application2
+## get_application
 
-> ::std::collections::HashMap<String, serde_json::Value> get_application2()
-Return the current application usage.
+> std::path::PathBuf get_application()
 
-Return the current application usage
 
 ### Parameters
 
@@ -47,7 +45,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**::std::collections::HashMap<String, serde_json::Value>**](serde_json::Value.md)
+[**std::path::PathBuf**](std::path::PathBuf.md)
 
 ### Authorization
 
