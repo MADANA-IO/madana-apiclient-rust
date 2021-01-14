@@ -9,6 +9,7 @@ docs/CertificateServiceApi.md
 docs/DataCollectionServiceApi.md
 docs/EnclaveServiceApi.md
 docs/EnvironmentServiceApi.md
+docs/InvoiceServiceApi.md
 docs/JsonDiskConfig.md
 docs/JsonEnclavePort.md
 docs/JsonEnclaveProcess.md
@@ -106,6 +107,7 @@ src/apis/configuration.rs
 src/apis/data_collection_service_api.rs
 src/apis/enclave_service_api.rs
 src/apis/environment_service_api.rs
+src/apis/invoice_service_api.rs
 src/apis/mod.rs
 src/apis/node_service_api.rs
 src/apis/organization_service_api.rs

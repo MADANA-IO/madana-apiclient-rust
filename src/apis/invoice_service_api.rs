@@ -15,29 +15,24 @@ use crate::apis::ResponseContent;
 use super::{Error, configuration};
 
 
-/// struct for typed errors of method `get_all_objects`
+/// struct for typed errors of method `get_active_saa_s_subscriptions`
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
-pub enum GetAllObjectsError {
-    UnknownValue(serde_json::Value),
-}
-
-/// struct for typed errors of method `get_application2`
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(untagged)]
-pub enum GetApplication2Error {
-    Status500(),
+pub enum GetActiveSaaSSubscriptionsError {
     UnknownValue(serde_json::Value),
 }
 
 
-pub async fn get_all_objects(configuration: &configuration::Configuration, ) -> Result<std::path::PathBuf, Error<GetAllObjectsError>> {
+pub async fn get_active_saa_s_subscriptions(configuration: &configuration::Configuration, dayssince: Option<&str>) -> Result<std::path::PathBuf, Error<GetActiveSaaSSubscriptionsError>> {
 
     let local_var_client = &configuration.client;
 
-    let local_var_uri_str = format!("{}/system/health", configuration.base_path);
+    let local_var_uri_str = format!("{}/invoices", configuration.base_path);
     let mut local_var_req_builder = local_var_client.get(local_var_uri_str.as_str());
 
+    if let Some(ref local_var_str) = dayssince {
+        local_var_req_builder = local_var_req_builder.query(&[("dayssince", &local_var_str.to_string())]);
+    }
     if let Some(ref local_var_user_agent) = configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
@@ -51,34 +46,7 @@ pub async fn get_all_objects(configuration: &configuration::Configuration, ) -> 
     if local_var_status.is_success() {
         serde_json::from_str(&local_var_content).map_err(Error::from)
     } else {
-        let local_var_entity: Option<GetAllObjectsError> = serde_json::from_str(&local_var_content).ok();
-        let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
-        Err(Error::ResponseError(local_var_error))
-    }
-}
-
-/// Return the current application usage
-pub async fn get_application2(configuration: &configuration::Configuration, ) -> Result<::std::collections::HashMap<String, serde_json::Value>, Error<GetApplication2Error>> {
-
-    let local_var_client = &configuration.client;
-
-    let local_var_uri_str = format!("{}/system/usage", configuration.base_path);
-    let mut local_var_req_builder = local_var_client.get(local_var_uri_str.as_str());
-
-    if let Some(ref local_var_user_agent) = configuration.user_agent {
-        local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
-    }
-
-    let local_var_req = local_var_req_builder.build()?;
-    let local_var_resp = local_var_client.execute(local_var_req).await?;
-
-    let local_var_status = local_var_resp.status();
-    let local_var_content = local_var_resp.text().await?;
-
-    if local_var_status.is_success() {
-        serde_json::from_str(&local_var_content).map_err(Error::from)
-    } else {
-        let local_var_entity: Option<GetApplication2Error> = serde_json::from_str(&local_var_content).ok();
+        let local_var_entity: Option<GetActiveSaaSSubscriptionsError> = serde_json::from_str(&local_var_content).ok();
         let local_var_error = ResponseContent { status: local_var_status, content: local_var_content, entity: local_var_entity };
         Err(Error::ResponseError(local_var_error))
     }

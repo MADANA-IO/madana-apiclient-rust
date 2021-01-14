@@ -69,6 +69,7 @@ pub mod certificate_service_api;
 pub mod data_collection_service_api;
 pub mod enclave_service_api;
 pub mod environment_service_api;
+pub mod invoice_service_api;
 pub mod node_service_api;
 pub mod organization_service_api;
 pub mod request_service_api;
