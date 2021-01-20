@@ -8,6 +8,7 @@ Method | HTTP request | Description
 [**add_pass_trial_subscription**](SubscriptionServiceApi.md#add_pass_trial_subscription) | **post** /subscriptions/paas/trial | 
 [**get_application**](SubscriptionServiceApi.md#get_application) | **get** /subscriptions/active | 
 [**get_checkout_session**](SubscriptionServiceApi.md#get_checkout_session) | **get** /subscriptions/{productname}/checkout | 
+[**get_checkout_session2**](SubscriptionServiceApi.md#get_checkout_session2) | **post** /subscriptions/{productname}/{newplan} | 
 
 
 
@@ -96,6 +97,35 @@ No authorization required
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**productname** | **String** |  | [required] |
+
+### Return type
+
+[**std::path::PathBuf**](std::path::PathBuf.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## get_checkout_session2
+
+> std::path::PathBuf get_checkout_session2(newplan, productname)
+
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**newplan** | **String** |  | [required] |
 **productname** | **String** |  | [required] |
 
 ### Return type
