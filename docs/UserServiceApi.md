@@ -4,6 +4,7 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**cancel_subscription**](UserServiceApi.md#cancel_subscription) | **post** /users/{username}/subscriptions/{planname}/cancel | 
 [**create_object**](UserServiceApi.md#create_object) | **post** /users | Creates a new user object.
 [**delete_object**](UserServiceApi.md#delete_object) | **delete** /users/{username} | Deletes an User based on the provided id and securitycontext.
 [**delete_object_0**](UserServiceApi.md#delete_object_0) | **delete** /users/{username}/social/{platform}/{ident} | Deletes linked account from the user and securitycontext.
@@ -15,6 +16,35 @@ Method | HTTP request | Description
 [**set_settings**](UserServiceApi.md#set_settings) | **post** /users/{username}/settings | 
 [**update_object**](UserServiceApi.md#update_object) | **put** /users/{username} | Updates Userproperties based on the provided user object.
 
+
+
+## cancel_subscription
+
+> std::path::PathBuf cancel_subscription(planname, username)
+
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**planname** | **String** |  | [required] |
+**username** | **String** |  | [required] |
+
+### Return type
+
+[**std::path::PathBuf**](std::path::PathBuf.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
 ## create_object
