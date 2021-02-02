@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**input_stream** | Option<[**serde_json::Value**](.md)> |  | [optional]
 **alive** | Option<**bool**> |  | [optional]
+**input_stream** | Option<[**serde_json::Value**](.md)> |  | [optional]
 **error_stream** | Option<[**serde_json::Value**](.md)> |  | [optional]
 **output_stream** | Option<[**serde_json::Value**](.md)> |  | [optional]
 
