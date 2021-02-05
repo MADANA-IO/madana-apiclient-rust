@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**kind** | Option<**String**> |  | [optional]
 **items** | Option<[**Vec<crate::models::JsonV1Event>**](json_V1Event.md)> |  | [optional]
+**kind** | Option<**String**> |  | [optional]
 **metadata** | Option<[**crate::models::JsonV1ListMeta**](json_V1ListMeta.md)> |  | [optional]
 **api_version** | Option<**String**> |  | [optional]
 

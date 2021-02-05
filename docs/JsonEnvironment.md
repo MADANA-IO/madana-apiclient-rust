@@ -4,15 +4,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**published** | Option<**bool**> |  | [optional]
 **size** | Option<**String**> |  | [optional]
-**packages** | Option<**Vec<String>**> |  | [optional]
-**uuid** | Option<**String**> |  | [optional]
 **root_hash_offset** | Option<**String**> |  | [optional]
-**ipfs_hash** | Option<**String**> |  | [optional]
+**packages** | Option<**Vec<String>**> |  | [optional]
+**published** | Option<**bool**> |  | [optional]
 **roothash** | Option<**String**> |  | [optional]
-**description** | Option<**String**> |  | [optional]
 **content** | Option<**Vec<String>**> |  | [optional]
+**ipfs_hash** | Option<**String**> |  | [optional]
+**uuid** | Option<**String**> |  | [optional]
+**description** | Option<**String**> |  | [optional]
 **default_run_configuration** | Option<[**crate::models::JsonRunConfig**](json_RunConfig.md)> |  | [optional]
 **name** | Option<**String**> |  | [optional]
 
