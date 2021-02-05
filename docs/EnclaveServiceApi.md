@@ -12,6 +12,7 @@ Method | HTTP request | Description
 [**get_enclave**](EnclaveServiceApi.md#get_enclave) | **get** /enclaves/{uuid} | 
 [**get_enclave_types**](EnclaveServiceApi.md#get_enclave_types) | **get** /enclaves/types | 
 [**get_enclaves**](EnclaveServiceApi.md#get_enclaves) | **get** /enclaves | Returns UUIDs of existing analyses.
+[**get_stats**](EnclaveServiceApi.md#get_stats) | **get** /enclaves/stats | 
 [**kill_enclave**](EnclaveServiceApi.md#kill_enclave) | **post** /enclaves/{uuid}/kill | 
 
 
@@ -230,6 +231,34 @@ Name | Type | Description  | Required | Notes
 **limit** | Option<**String**> | Used for offset pagination. Limit/Offset Paging would look like GET /request?limit=20&offset=100. This query would return the 20 rows starting with the 100th row |  |[default to 30]
 **offset** | Option<**String**> | Used for offset pagination. Limit/Offset Paging would look like GET /request?limit=20&offset=100. This query would return the 20 rows starting with the 100th row |  |[default to 0]
 **status** | Option<**String**> |  |  |
+
+### Return type
+
+[**std::path::PathBuf**](std::path::PathBuf.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## get_stats
+
+> std::path::PathBuf get_stats(dayssince)
+
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**dayssince** | Option<**String**> |  |  |[default to 30]
 
 ### Return type
 
