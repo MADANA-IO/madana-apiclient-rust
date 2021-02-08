@@ -1,13 +1,11 @@
-# JsonProcess
+# JsonNodeRunRequest
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**alive** | Option<**bool**> |  | [optional]
-**error_stream** | Option<[**serde_json::Value**](.md)> |  | [optional]
-**output_stream** | Option<[**serde_json::Value**](.md)> |  | [optional]
-**input_stream** | Option<[**serde_json::Value**](.md)> |  | [optional]
+**cpu_count** | Option<**String**> |  | [optional]
+**subdomain** | Option<**String**> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

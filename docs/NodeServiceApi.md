@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**get_bootstrap**](NodeServiceApi.md#get_bootstrap) | **get** /nodes/bootstrap | 
 [**get_nodes2**](NodeServiceApi.md#get_nodes2) | **get** /nodes | 
 [**post_node_info**](NodeServiceApi.md#post_node_info) | **post** /nodes | 
+[**post_node_info_0**](NodeServiceApi.md#post_node_info_0) | **post** /nodes/create | 
 
 
 
@@ -74,6 +75,34 @@ No authorization required
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **body** | Option<[**JsonNodeInfo**](JsonNodeInfo.md)> |  |  |
+
+### Return type
+
+[**std::path::PathBuf**](std::path::PathBuf.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## post_node_info_0
+
+> std::path::PathBuf post_node_info_0(body)
+
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**body** | Option<[**JsonNodeRunRequest**](JsonNodeRunRequest.md)> |  |  |
 
 ### Return type
 

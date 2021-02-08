@@ -56,6 +56,8 @@ pub mod json_network_interface;
 pub use self::json_network_interface::JsonNetworkInterface;
 pub mod json_node_info;
 pub use self::json_node_info::JsonNodeInfo;
+pub mod json_node_run_request;
+pub use self::json_node_run_request::JsonNodeRunRequest;
 pub mod json_process;
 pub use self::json_process::JsonProcess;
 pub mod json_run_config;
