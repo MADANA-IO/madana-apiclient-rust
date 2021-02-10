@@ -6,6 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**create_node**](NodeServiceApi.md#create_node) | **post** /nodes/v2 | 
 [**get_bootstrap**](NodeServiceApi.md#get_bootstrap) | **get** /nodes/bootstrap | 
+[**get_node_licenses**](NodeServiceApi.md#get_node_licenses) | **get** /nodes/licenses | 
 [**get_node_v2**](NodeServiceApi.md#get_node_v2) | **get** /nodes/v2/{ident} | 
 [**get_nodes2**](NodeServiceApi.md#get_nodes2) | **get** /nodes | 
 [**get_nodes_v2**](NodeServiceApi.md#get_nodes_v2) | **get** /nodes/v2 | Returns UUIDs of existing analyses.
@@ -51,6 +52,34 @@ No authorization required
 ### Parameters
 
 This endpoint does not need any parameter.
+
+### Return type
+
+[**std::path::PathBuf**](std::path::PathBuf.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## get_node_licenses
+
+> std::path::PathBuf get_node_licenses(active)
+
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**active** | Option<**String**> |  |  |[default to true]
 
 ### Return type
 
