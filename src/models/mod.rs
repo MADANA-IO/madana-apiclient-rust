@@ -66,8 +66,6 @@ pub mod json_sgx_info;
 pub use self::json_sgx_info::JsonSgxInfo;
 pub mod json_signed_data;
 pub use self::json_signed_data::JsonSignedData;
-pub mod json_signed_data_utils;
-pub use self::json_signed_data_utils::JsonSignedDataUtils;
 pub mod json_v1_event;
 pub use self::json_v1_event::JsonV1Event;
 pub mod json_v1_event_list;
